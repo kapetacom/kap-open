@@ -1,0 +1,18 @@
+brews:
+  - name: kap-open
+    tap:
+      owner: kapetacom
+      name: brews
+      token: "{{ .Env.GITHUB_TOKEN }}"
+    folder: Formula
+    homepage: https://github.com/kapetacom/kap-open
+nfpms:
+  - id: kap-open
+    maintainer: 'Kapeta <info@kapeta.com>'
+    package_name: kap-open
+    formats:
+      - apk
+      - deb
+      - rpm
+  - rpm:
+     summary: kap-open is a command line tool to opens kapeta urls in an authenticated way
